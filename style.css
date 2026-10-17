@@ -77,3 +77,30 @@ body {
 .profile-button:hover {
     background-color: #1d4ed8;
 }
+
+/* Mobile responsive design */
+@media (max-width: 480px) {
+    body {
+        padding: 16px;
+    }
+
+    .profile-card {
+        padding: 28px 20px;
+        border-radius: 22px;
+    }
+
+    .profile-avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    .profile-card h1 {
+        font-size: 23px;
+    }
+
+    .profile-description {
+        font-size: 14px;
+    }
+}
+

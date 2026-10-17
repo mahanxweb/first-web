@@ -1,27 +1,51 @@
 
-
 <!DOCTYPE html>
-<html lang="fa" dir="rtl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Card</title>
+    <meta
+        name="description"
+        content="Meet Mahan, an aspiring web developer learning HTML and CSS."
+    >
+    <title>Mahan | Web Developer in Progress</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <main class="profile-card">
-        <div class="profile-avatar">M</div>
+        <div class="profile-avatar" aria-label="Mahan's avatar">
+            M
+        </div>
 
         <h1>Web Developer in Progress</h1>
 
         <p class="profile-description">
-
+            Hi, I'm Mahan! I'm learning web development and building my skills
+            one project at a time. Welcome to my journey!
         </p>
-           im mahan and enjoy to you click there
-        </p>
 
-        <button class="profile-button">Explore My Journey</button>
+     
+<button class="profile-button" id="journey-button" type="button">
+    Explore My Journey
+</button>
+
+<p id="journey-message" class="profile-description" hidden>
+    Thanks for visiting! My web development journey starts here.
+</p>
+
+<script>
+    const button = document.getElementById("journey-button");
+    const message = document.getElementById("journey-message");
+
+    button.addEventListener("click", function () {
+        message.hidden = !message.hidden;
+        button.textContent = message.hidden
+            ? "Explore My Journey"
+            : "Hide Message";
+    });
+</script>
+
     </main>
 
 </body>
