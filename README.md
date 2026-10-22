@@ -12,7 +12,6 @@ First Web is an early personal project created to practice the fundamentals of w
 - CSS3
 - Git
 - GitHub Pages
-- java script
 
 ## Live Demo
 
